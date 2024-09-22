@@ -1,23 +1,43 @@
-
+// TODO implement without slice and splice
 
 function duplicateZeros(arr) {
-    let len = arr.length;
-    for (var i = 0; i < arr.length; i++) {
-        if (arr[i] === 0) {
-            arr.splice(i, 0, 0);
-            i++;
-        }
-    }
-    newArr=arr.slice(0, len)
+    // let len = arr.length;
+    // // for (var i = 0; i < arr.length; i++) {
+    // //     if (arr[i] === 0) {
+    // //         arr.splice(i, 0, 0);
+    // //         i++;
+    // //     }
+    // // }
+    // // newArr=arr.slice(0, len)
+    // let count=0;
+    // for(let i=0; i<arr.length; i++) {
+    //     if(arr[i] === 0) {
+    //         count++;
+    //     }
+    
+    // }
+    // let newArr = new Array(len+count).fill(0);
+    // let newArrLength=len+count;
+    for(let i=0;i<arr.length-1;i++){
+        if(arr[i]==0){
+          for(let j=arr.length-1;j>i;j--){   
+          arr[j]=arr[j-1];                         //shifting of array elements
+           }
+           i++;
+         }
+         
+      }
+      
 
 
 
-    return newArr;
+
+    return arr;
 
 
 
 }
 
 
-console.log(duplicateZeros([1,2,3]));
+console.log(duplicateZeros([1,0,2,3,0,4,5,0]));
 

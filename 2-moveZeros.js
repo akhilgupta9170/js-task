@@ -15,5 +15,7 @@ return arr;
 
 }
 
-console.log(moveZeros([0,1,5,0,2]))
-console.log(moveZeros([1,0,0,4,5]))
+// console.log(moveZeros([0,1,5,0,2]))
+// console.log(moveZeros([1,0,0,4,5]))
+
+console.log(moveZeros([0,0,0,0,0,0,0,1,-1,2,0]))
