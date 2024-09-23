@@ -1,3 +1,7 @@
+// Move Zeros to the end of the array
+// Using loop over loop to swap the zeros with non zero. 
+
+
 function moveZeros(arr){
     for(var i=0;i<arr.length;  i++) {
       for(var j=0;j<arr.length-i-1; j++) {
