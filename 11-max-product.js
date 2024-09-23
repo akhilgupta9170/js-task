@@ -31,4 +31,4 @@ console.log(maximumProduct([1,2,3,4,8,5,9,5,7,2]))
 
 
 
-}
+
