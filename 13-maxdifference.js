@@ -19,4 +19,4 @@ function maxDifference(arr) {
 
 
 console.log(maxDifference([1, 2, 3, 4, 5]));
-console.log(maxDifference([7, 1, 5, 4])) // Output: 4
+console.log(maxDifference([7, 1, 5, 4])) 
