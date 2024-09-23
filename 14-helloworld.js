@@ -1,3 +1,7 @@
+// Return Hello World from the function whatever the argument is passed to the function.
+// Closure functions
+
+
 function createHelloWorldFunction(){
     return function(){
        return `Hello World`;
