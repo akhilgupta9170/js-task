@@ -1,22 +1,29 @@
+// Calculate tax.
 
 function calculateTax(slab,income){
-    // let rowLen=slab[0].length;
-    // let colLen=slab.length;
+    
     let tax=0;
+    let remainingAmount=income;
+
+    let previousupper=0
     for(let row=0; row<slab.length; row++){
-        // for(let j=)
-        //console.log(slab[row])
-        for(let col=0; col<slab[row].length; col++){
-            //console.log(`${row}===>${col} ${slab[row][col]}`)
+        
+        if(remainingAmount>=slab[row][0]){
+        tax+= (slab[row][0]-previousupper)*(slab[row][1]/100);
+        }else{
+            tax+= (remainingAmount)*(slab[row][1]/100);
+
         }
-        if (income>=slab[col][row]){
-            tax=slab[col][row]*;
+        previousupper = slab[row][0];
+        remainingAmount=income-slab[row][0]
+        
+        
+ 
+        
         }
+        return tax;
+
 
     }
-     
-
-
-}
-
-calculateTax([[3, 50], [7, 10], [12, 25]])
+      
+console.log(calculateTax([[3, 50], [7, 10], [12, 25]],10))
