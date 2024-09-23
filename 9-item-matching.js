@@ -1,3 +1,7 @@
+//Item Matching Rule
+// Used obejct to keep track the rule and index of the array.
+
+
 function countMatches(pattern,rule,key){
     let obj={
         "type":0,
