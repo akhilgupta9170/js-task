@@ -1,4 +1,8 @@
-// TODO implement without slice and splice
+// Duplicate the Zero in the array.
+// Method 1- By using slice and splice method duplicated the zeros in the array.
+
+// Method 2- By shifting the element to the  right.
+
 
 function duplicateZeros(arr) {
     // let len = arr.length;
