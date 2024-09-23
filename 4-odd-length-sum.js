@@ -1,5 +1,5 @@
 //Sum of All Odd Length Subarrays
-
+// By the help of nested looping , claculate the sum of all the odd length arrays
 
 function sumOddLengthSubarrays(arr) {   
     var sum =0;
