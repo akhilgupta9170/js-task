@@ -1,3 +1,5 @@
+// Missing Number in array  having elements between 0 to n-1 and length of array is n.
+// By using formula [n*(n-1)]/2 claculates the sum of series , and calculated sum of Array,return the diffrence of series sum and array sum.
 
 
 const missingNumber = function(nums) {
