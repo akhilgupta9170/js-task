@@ -1,3 +1,8 @@
+// Find difference between two arrays
+// used flag to determine value is present in both arrays, 
+
+
+
 function findDifference(nums1, nums2) {
   let arr1 = new Array();
   let arr2 = new Array();
