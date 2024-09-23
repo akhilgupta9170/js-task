@@ -1,4 +1,5 @@
 // plus one to the large integer in the array
+// By using join and Number constructor to convert the string into a number then added one in number.
 
 function get(arr) {
     let num= arr.join("");
